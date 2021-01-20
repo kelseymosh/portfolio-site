@@ -3,12 +3,13 @@ import {
     Nav, 
     NavbarContainer,
     NavLogo,
-    MobileIcon,
-    Bars, 
+    MenuButton,
+    // Bars, 
     NavMenu, 
     NavItem,
     NavLink,
 } from './NavbarElements';
+
 
 const Navbar = ({ toggle }) => {
     return (
@@ -18,9 +19,9 @@ const Navbar = ({ toggle }) => {
                     <NavLogo to="/">
                         <img src="/images/Logo.png" alt="logo" height="90" width="90"/>
                     </NavLogo>
-                    <MobileIcon onClick={toggle}>
-                        <Bars />
-                    </MobileIcon>
+                    <MenuButton onClick={toggle}>
+                        <div className="menu-btn-burger"></div>
+                    </MenuButton>
                     <NavMenu>
                         <NavItem>
                             <NavLink to="about">ABOUT</NavLink>

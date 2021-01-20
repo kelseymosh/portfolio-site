@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
-import { FaBars } from 'react-icons/fa'
+
+// import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 
 export const Nav = styled.nav`
-    background: ##fcfaf5;
+    background: #fcfaf5;
     border-bottom: 1px solid #000;
     height: 100px;
     // margin-top: -90px;
@@ -40,23 +41,32 @@ export const NavLogo = styled(LinkRouter)`
     margin-left:24px;
 `;
 
-export const MobileIcon = styled.div`
+export const MenuButton = styled.div`
     display: none;
 
     @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
-`
+        // display: block;
+        // position: relative;
+        // top: 0;
+        // right: 0;
+        // transform: translate(-100%, 60%);
+        // font-size: 1.8rem;
+        // cursor: pointer;
 
-export const Bars = styled(FaBars)`
-    color: #3c3c3b;
-`;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+` 
+
+// export const Hamburger = styled(Hamburger)`
+//     color: #3c3c3b;
+// `;
 
 export const NavMenu = styled.ul`
     display: flex;
