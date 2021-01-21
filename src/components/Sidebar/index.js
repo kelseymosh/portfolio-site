@@ -4,6 +4,10 @@ import {
     SidebarWrapper,
     SidebarMenu,
     SidebarLink,
+    LogoWrapper,
+    Github,
+    Linkedin,
+    Medium,
 } from './SidebarElements'
 
 
@@ -17,6 +21,11 @@ const Sidebar = ({ open, toggle }) => {
                     <SidebarLink to="projects" onClick={toggle}>PROJECTS</SidebarLink>
                     <SidebarLink to="resume" onClick={toggle}>RESUME</SidebarLink>
                     <SidebarLink to="contact" onClick={toggle}>CONTACT</SidebarLink>
+                    <LogoWrapper>
+                        <Github/>
+                        <Linkedin/>
+                        <Medium/>
+                    </LogoWrapper>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { ReactComponent as LogoImg } from '../Images/Logo.svg'
+import { ReactComponent as LogoImg } from '../Logos/Logo.svg'
 // import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
     max-width: 1100px;
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogoLink = styled(Link)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
@@ -45,7 +45,7 @@ export const Logo = styled(LogoImg)`
 
     &:hover g {
         fill: #c0cfb2 !important;
-        transition: all ease 0.3s;
+        transition: all ease 0.6s;
     }
 `
 

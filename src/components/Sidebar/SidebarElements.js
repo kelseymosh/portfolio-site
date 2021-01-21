@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { ReactComponent as GithubImg } from '../Logos/Github.svg'
+import { ReactComponent as LinkedinImg } from '../Logos/Linkedin.svg'
+import { ReactComponent as MediumImg } from '../Logos/Medium.svg'
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -41,6 +44,7 @@ export const SidebarLink = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     color: #3c3c3b;
+    // font-family: 'Noto Serif JP', serif;
 
     &:hover {
         color: #d4c8be;
@@ -48,3 +52,21 @@ export const SidebarLink = styled(Link)`
     }
 `;
 
+export const LogoWrapper = styled.div`
+
+`
+
+export const Github = styled(GithubImg)`
+    height: 30px;
+    width: 30px;
+`
+
+export const Linkedin = styled(LinkedinImg)`
+    height: 30px;
+    width: 30px;
+`
+
+export const Medium = styled(MediumImg)`
+    height: 30px;
+    width: 30px;
+`

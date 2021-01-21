@@ -2,7 +2,7 @@ import React from 'react'
 import { 
     Nav, 
     NavbarContainer,
-    NavLogo,
+    NavLogoLink,
     Logo,
     MenuButton,
     NavMenu, 
@@ -16,10 +16,9 @@ const Navbar = ({ toggle, open }) => {
         <>
             <Nav open={open}>
                 <NavbarContainer>
-                    <NavLogo to="/">
-                        {/* <img src="/images/Logo.svg" alt="logo" height="70" width="175"/> */}
+                    <NavLogoLink to="/">
                         <Logo/>
-                    </NavLogo>
+                    </NavLogoLink>
                     <MenuButton onClick={toggle}>
                         <Burger open={open}/>
                     </MenuButton>
