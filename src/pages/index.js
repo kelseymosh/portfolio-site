@@ -3,16 +3,16 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [open, setOpen] = useState(false)
 
     const toggle = () => {
-        setIsOpen(!isOpen)
+        setOpen(!open)
     }
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
+            <Sidebar open={open} toggle={toggle} />
+            <Navbar open={open} toggle={toggle} />
         </>
     )
 }

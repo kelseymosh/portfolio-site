@@ -10,30 +10,3 @@
 body {
     background-color: #fcfaf5; 
 }
-
-.menu-btn-burger {
-    width: 40px;
-    height: 1px;
-    background: #3c3c3b;
-    border-radius: 5px;
-    transition: all .5s ease-in-out
-}
-
-.menu-btn-burger::before,
-.menu-btn-burger::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 1px;
-    background: #3c3c3b;
-    border-radius: 5px;
-    transition: all .5s ease-in-out
-}
-
-.menu-btn-burger::before {
-    transform: translateY(16px);
-}
-
-.menu-btn-burger::after {
-    transform: translateY(16px);
-}

@@ -2,13 +2,10 @@ import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 
-// import { HiOutlineMenuAlt4 } from 'react-icons/hi'
-
 export const Nav = styled.nav`
     background: #fcfaf5;
-    border-bottom: 1px solid #000;
+    border-bottom: ${({ open }) => open ? 'none' : '1px solid #000' }
     height: 100px;
-    // margin-top: -90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,14 +42,6 @@ export const MenuButton = styled.div`
     display: none;
 
     @media screen and (max-width: 768px) {
-        // display: block;
-        // position: relative;
-        // top: 0;
-        // right: 0;
-        // transform: translate(-100%, 60%);
-        // font-size: 1.8rem;
-        // cursor: pointer;
-
         position: relative;
         display: flex;
         justify-content: center;

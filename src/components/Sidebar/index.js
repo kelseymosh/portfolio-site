@@ -8,9 +8,9 @@ import {
 } from './SidebarElements'
 
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ open, toggle }) => {
     return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <SidebarContainer open={open} onClick={toggle}>
             <Icon onClick={toggle}>
                 
             </Icon>
