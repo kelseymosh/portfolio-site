@@ -3,6 +3,7 @@ import {
     Nav, 
     NavbarContainer,
     NavLogo,
+    Logo,
     MenuButton,
     NavMenu, 
     NavItem,
@@ -16,7 +17,8 @@ const Navbar = ({ toggle, open }) => {
             <Nav open={open}>
                 <NavbarContainer>
                     <NavLogo to="/">
-                        <img src="/images/Logo.png" alt="logo" height="70" width="175"/>
+                        {/* <img src="/images/Logo.svg" alt="logo" height="70" width="175"/> */}
+                        <Logo/>
                     </NavLogo>
                     <MenuButton onClick={toggle}>
                         <Burger open={open}/>

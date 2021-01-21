@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { ReactComponent as LogoImg } from '../Images/Logo.svg'
 // import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
     background: #fcfaf5;
-    border-bottom: ${({ open }) => open ? 'none' : '1px solid #000'};
+    border-bottom: ${({ open }) => open ? 'none' : '1px solid #000' };
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -37,6 +38,16 @@ export const NavLogo = styled(Link)`
     align-items:center;
     margin-left: 24px;
 `;
+
+export const Logo = styled(LogoImg)`
+    height: 70px;
+    width: 175px;
+
+    &:hover g {
+        fill: #c0cfb2 !important;
+        transition: all ease 0.3s;
+    }
+`
 
 export const MenuButton = styled.div`
     display: none;

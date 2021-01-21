@@ -1,7 +1,6 @@
 import React from 'react'
 import { 
     SidebarContainer,
-    Icon, 
     SidebarWrapper,
     SidebarMenu,
     SidebarLink,
@@ -11,11 +10,9 @@ import {
 const Sidebar = ({ open, toggle }) => {
     return (
         <SidebarContainer open={open} onClick={toggle}>
-            <Icon onClick={toggle}>
-                
-            </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
+                    <h2>MENU</h2>
                     <SidebarLink to="about" onClick={toggle}>ABOUT</SidebarLink>
                     <SidebarLink to="projects" onClick={toggle}>PROJECTS</SidebarLink>
                     <SidebarLink to="resume" onClick={toggle}>RESUME</SidebarLink>
