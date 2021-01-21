@@ -16,7 +16,7 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">
-                        <img src="/images/Logo.png" alt="logo" height="90" width="90"/>
+                        <img src="/images/Logo.png" alt="logo" height="70" width="175"/>
                     </NavLogo>
                     <MenuButton onClick={toggle}>
                         <div className="menu-btn-burger"></div>

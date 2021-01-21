@@ -38,7 +38,7 @@ export const NavLogo = styled(LinkRouter)`
     cursor: pointer;
     display: flex;
     align-items:center;
-    margin-left:24px;
+    margin-left: 24px;
 `;
 
 export const MenuButton = styled.div`
@@ -90,12 +90,11 @@ export const NavLink = styled(LinkScroll)`
     cursor: pointer;
 
     &:hover {
-        color: #7F867B;
+        color: #d4c8be;
     }
 
     &.active {
-        // border-bottom: 3px solid #7F867B;
-        color: #7F867B;
+        color: #d4c8be;
     }
 `;
 
