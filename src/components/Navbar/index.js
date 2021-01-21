@@ -4,12 +4,11 @@ import {
     NavbarContainer,
     NavLogo,
     MenuButton,
-    // Bars, 
     NavMenu, 
     NavItem,
     NavLink,
 } from './NavbarElements';
-
+import { Rotate as Hamburger } from 'hamburger-react'
 
 const Navbar = ({ toggle }) => {
     return (
@@ -21,6 +20,7 @@ const Navbar = ({ toggle }) => {
                     </NavLogo>
                     <MenuButton onClick={toggle}>
                         <div className="menu-btn-burger"></div>
+                        {/* <Hamburger size={20} distance="lg" color="#3c3c3b"/> */}
                     </MenuButton>
                     <NavMenu>
                         <NavItem>

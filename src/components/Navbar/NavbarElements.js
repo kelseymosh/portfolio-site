@@ -64,10 +64,6 @@ export const MenuButton = styled.div`
     }
 ` 
 
-// export const Hamburger = styled(Hamburger)`
-//     color: #3c3c3b;
-// `;
-
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
