@@ -16,7 +16,6 @@ const Sidebar = ({ open, toggle }) => {
         <SidebarContainer open={open} onClick={toggle}>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <h2>MENU</h2>
                     <SidebarLink to="about" onClick={toggle}>ABOUT</SidebarLink>
                     <SidebarLink to="projects" onClick={toggle}>PROJECTS</SidebarLink>
                     <SidebarLink to="resume" onClick={toggle}>RESUME</SidebarLink>
