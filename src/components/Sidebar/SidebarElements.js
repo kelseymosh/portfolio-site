@@ -56,17 +56,33 @@ export const LogoWrapper = styled.div`
 
 `
 
+export const LogoLink = styled.a`
+    cursor: pointer;
+`
+
 export const Github = styled(GithubImg)`
     height: 30px;
     width: 30px;
+
+    path {
+        fill: #3c3c3b !important;
+    }
 `
 
 export const Linkedin = styled(LinkedinImg)`
     height: 30px;
     width: 30px;
+
+    path {
+        fill: #3c3c3b !important;
+    }
 `
 
 export const Medium = styled(MediumImg)`
     height: 30px;
     width: 30px;
+
+    path {
+        fill: #3c3c3b !important;
+    }
 `

@@ -1,8 +1,14 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { ReactComponent as GithubImg } from '../Logos/Github.svg'
+import { ReactComponent as LinkedinImg } from '../Logos/Linkedin.svg'
+import { ReactComponent as MediumImg } from '../Logos/Medium.svg'
 
 export const FooterContainer = styled.footer`
-    background-color: #c7c7bb;
+    background-color: #3c3c3b;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const FooterWrapper = styled.div`
@@ -11,57 +17,41 @@ export const FooterWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1100px;
     margin: 0 auto;
 `;
 
-export const FooterLinksContainer = styled.div`
-    display: flex;
-    justify-content: center;
+export const LogoWrapper = styled.div`
 
-    @media screen and (max-width: 820px) {
-        padding-top: 32px;
+`
+
+export const LogoLink = styled.a`
+    cursor: pointer;
+`
+
+export const Github = styled(GithubImg)`
+    height: 30px;
+    width: 30px;
+    
+    &:hover path {
+        fill: #c0cfb2 !important;
+        transition: all ease 0.3s;
     }
-`;
+`
 
-export const FooterLinksWrapper = styled.div`
-    display: flex;
+export const Linkedin = styled(LinkedinImg)`
+    height: 30px;
+    width: 30px;
 
-    @media screen and (max-width: 820px) {
-        flex-direction: column;
-    }
-`;
+    &:hover path {
+        fill: #c0cfb2 !important;
+        transition: all ease 0.3s;
+`
 
-export const FooterLinkItems = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing: border-box;
-    color: #fff;
+export const Medium = styled(MediumImg)`
+    height: 30px;
+    width: 30px;
 
-    @media screen and (max-width: 420px) {
-        margin: 0;
-        padding:10px;
-        width: 100%;
-    }
-`;
-
-export const FooterLinkTitle = styled.h1`
-    font-size: 14px;
-    margin-bottom: 16px;
-`;
-
-export const FooterLink = styled(Link)`
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-    font-size: 14px;
-
-    &:hover {
-        color: color: #7F867B;
-        transition: 0.3s ease-out
-    }
-`;
+    &:hover path {
+        fill: #c0cfb2 !important;
+        transition: all ease 0.3s;
+`
