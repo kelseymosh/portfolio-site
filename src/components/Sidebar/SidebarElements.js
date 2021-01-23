@@ -1,8 +1,18 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 import { Link } from 'react-router-dom'
 import { ReactComponent as GithubImg } from '../Logos/Github.svg'
 import { ReactComponent as LinkedinImg } from '../Logos/Linkedin.svg'
 import { ReactComponent as MediumImg } from '../Logos/Medium.svg'
+
+const iconStyle = css`
+    height: 30px;
+    width: 30px;
+
+    path {
+        fill: #3c3c3b !important;
+    }
+`
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -52,37 +62,23 @@ export const SidebarLink = styled(Link)`
     }
 `;
 
-export const LogoWrapper = styled.div`
+export const IconWrapper = styled.div`
 
 `
 
-export const LogoLink = styled.a`
+export const IconLink = styled.a`
     cursor: pointer;
 `
 
-export const Github = styled(GithubImg)`
-    height: 30px;
-    width: 30px;
 
-    path {
-        fill: #3c3c3b !important;
-    }
+export const Github = styled(GithubImg)`
+    ${iconStyle}
 `
 
 export const Linkedin = styled(LinkedinImg)`
-    height: 30px;
-    width: 30px;
-
-    path {
-        fill: #3c3c3b !important;
-    }
+    ${iconStyle}
 `
 
 export const Medium = styled(MediumImg)`
-    height: 30px;
-    width: 30px;
-
-    path {
-        fill: #3c3c3b !important;
-    }
+    ${iconStyle}
 `
