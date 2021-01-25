@@ -26,7 +26,7 @@ const Footer = () => {
                 </IconLink>
                 </IconWrapper>
                 <ContactWrapper>
-                    <ContactTitle>Contact</ContactTitle>
+                    <ContactTitle>CONTACT</ContactTitle>
                     <ContactInfo>kelsocodes@gmail.com</ContactInfo>
                     <ContactInfo>970-672-7601</ContactInfo>
                 </ContactWrapper>

@@ -52,10 +52,10 @@ export const ContactWrapper = styled.div`
 export const ContactTitle = styled.div`
     color: #fff;
     font-size: 20px;
-    font-family: 'Merriweather', serif;
 `
 
 export const ContactInfo = styled.div`
     color: #fff;
     font-size: 12px;
+    font-family: 'Lora', serif;
 `

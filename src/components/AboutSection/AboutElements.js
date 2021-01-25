@@ -16,47 +16,45 @@ export const AboutMe = styled.div`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     border-right: 1px solid #000;
-    width: 45%;
+    width: 60%;
     padding: 5%;
 `
 
 export const AboutLink = styled(Link)`
     font-size: 12px;
-    color: #3c3c3b !important;
+    color: #3c3c3b;
 `
 
 export const LanguagesWrapper = styled.div`
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     padding: 5%;
+    font-size: 20px;
 `
 export const IconWrapper = styled.div`
-    margin-left: 20%;
+    text-align: center;
 `
 
 export const FrontendIcon = styled(RiCodeBoxLine)`
-    
+    color: #3c3c3b;
 `
 
 export const BackendIcon = styled(HiOutlineDesktopComputer)`
-    
+    color: #3c3c3b;
 `
 
 export const DatabaseIcon = styled(FiDatabase)`
-    
+    color: #3c3c3b;
 `
 
 export const Arrow = styled(BsArrowRight)`
-
+    color: #3c3c3b;
+    width: 20px;
 `
 
-export const LanguagesFrontend = styled.ul`
-    display: flex;
-    flex-direction: column;
-`
-
-export const LanguagesBackend = styled.ul`
-    display: flex;
-    flex-direction: column;
+export const Language = styled.li`
+    font-family: 'Lora', serif;
+    font-size: 12px !important;
 `

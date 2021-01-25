@@ -9,8 +9,7 @@ import {
     FrontendIcon,
     BackendIcon,
     DatabaseIcon,
-    LanguagesFrontend,
-    LanguagesBackend,
+    Language,
 } from './AboutElements'
 
 const AboutSection = () => {
@@ -21,26 +20,22 @@ const AboutSection = () => {
             <AboutLink to="/about">VIEW ABOUT ME<Arrow/></AboutLink>
             </AboutMe>
             <LanguagesWrapper>
-                <LanguagesFrontend>
-                    Frontend
+                FRONTEND
                     <IconWrapper><FrontendIcon/></IconWrapper>
-                    <li>React</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Bootstrap</li>
-                    <li>Styled Components</li>
-                </LanguagesFrontend>
+                    <Language>React</Language>
+                    <Language>HTML</Language>
+                    <Language>CSS</Language>
+                    <Language>Javascript</Language>
+                    <Language>Bootstrap</Language>
+                    <Language>Styled Components</Language>
             </LanguagesWrapper>
             <LanguagesWrapper>
-                <LanguagesBackend>
-                    Backend
+                BACKEND
                     <IconWrapper><BackendIcon/><DatabaseIcon/></IconWrapper>
-                    <li>Ruby</li>
-                    <li>Ruby on Rails</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                </LanguagesBackend>
+                    <Language>Ruby</Language>
+                    <Language>Ruby on Rails</Language>
+                    <Language>Python</Language>
+                    <Language>Django</Language>
             </LanguagesWrapper>
         </AboutContainer>
     )
