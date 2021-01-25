@@ -3,6 +3,7 @@ import {
     SidebarContainer,
     SidebarWrapper,
     SidebarMenu,
+    MenuTitle,
     SidebarLink,
     IconWrapper,
     IconLink,
@@ -16,6 +17,7 @@ const Sidebar = ({ open, toggle }) => {
     return (
         <SidebarContainer open={open} onClick={toggle}>
             <SidebarWrapper>
+                <MenuTitle>MENU</MenuTitle>
                 <SidebarMenu>
                     <SidebarLink to="about" onClick={toggle}>ABOUT</SidebarLink>
                     <SidebarLink to="projects" onClick={toggle}>PROJECTS</SidebarLink>

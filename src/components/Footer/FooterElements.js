@@ -15,19 +15,14 @@ const iconStyle = css`
 
 export const FooterContainer = styled.footer`
     background-color: #3c3c3b;
+    display: flex;
+    justify-content: space-between;
+    padding : 48px 48px;
+    margin: 0 auto;
 
     @media screen and (max-width: 768px) {
         display: none;
     }
-`;
-
-export const FooterWrapper = styled.div`
-    padding : 48px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
 `;
 
 export const IconWrapper = styled.div`
@@ -48,4 +43,19 @@ export const Linkedin = styled(LinkedinImg)`
 
 export const Medium = styled(MediumImg)`
     ${iconStyle}
+`
+
+export const ContactWrapper = styled.div`
+
+`
+
+export const ContactTitle = styled.h2`
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+`
+
+export const ContactInfo = styled.p`
+    color: #fff;
+    font-size: 12px;
 `

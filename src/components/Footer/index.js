@@ -1,31 +1,35 @@
 import React from 'react'
 import {
     FooterContainer, 
-    FooterWrapper,
     IconWrapper,
     IconLink,
     Github,
     Linkedin,
     Medium, 
+    ContactWrapper,
+    ContactTitle,
+    ContactInfo,
 } from './FooterElements'
 
 const Footer = () => {
     return (
         <FooterContainer>
-            <FooterWrapper>
-                <IconWrapper>
-                    <IconLink href="https://github.com/kelseymosh">
-                        <Github/>
-                    </IconLink>
-                    <IconLink href="https://www.linkedin.com/in/kelseyoshiro/">
-                        <Linkedin/>
-                    </IconLink>
-                    <IconLink href="https://kelseymosh.medium.com/">
-                        <Medium/>
-                    </IconLink>
+            <IconWrapper>
+                <IconLink href="https://github.com/kelseymosh">
+                    <Github/>
+                </IconLink>
+                <IconLink href="https://www.linkedin.com/in/kelseyoshiro/">
+                    <Linkedin/>
+                </IconLink>
+                <IconLink href="https://kelseymosh.medium.com/">
+                    <Medium/>
+                </IconLink>
                 </IconWrapper>
-                
-            </FooterWrapper>
+                <ContactWrapper>
+                    <ContactTitle>Contact</ContactTitle>
+                    <ContactInfo>kelsocodes@gmail.com</ContactInfo>
+                    <ContactInfo>970-672-7601</ContactInfo>
+                </ContactWrapper>
         </FooterContainer>
     )
 }

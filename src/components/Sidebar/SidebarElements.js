@@ -23,6 +23,7 @@ export const SidebarContainer = styled.aside`
     align-items: center;
     top: 0;
     left: 0;
+    margin-top: 60px;
     transition: 0.3s ease-in-out;
     opacity: ${({ open }) => (open ? "100%" : "0")};
     top: ${({ open }) => (open ? "0" : "-100%")};
@@ -31,6 +32,11 @@ export const SidebarContainer = styled.aside`
 export const SidebarWrapper = styled.div`
     color: #3c3c3b;
 `;
+
+export const MenuTitle = styled.p`
+    font-size: 12px;
+    text-align: center;
+`
 
 export const SidebarMenu = styled.ul`
     display: grid;
@@ -54,7 +60,6 @@ export const SidebarLink = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     color: #3c3c3b;
-    // font-family: 'Noto Serif JP', serif;
 
     &:hover {
         color: #d4c8be;
