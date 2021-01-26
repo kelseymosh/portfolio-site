@@ -10,6 +10,11 @@ export const AboutContainer = styled.div`
     justify-content: space-around;
     flex-direction: row;
     border-top: 1px solid #000;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 ` 
 
 export const AboutMe = styled.div`
@@ -20,6 +25,12 @@ export const AboutMe = styled.div`
     border-right: 1px solid #000;
     width: 60%;
     padding: 5%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #000;
+    }
 `
 
 export const AboutLink = styled(Link)`
@@ -27,12 +38,24 @@ export const AboutLink = styled(Link)`
     color: #3c3c3b;
 `
 
+export const LanguagesContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 50%;
+    padding: 5%;
+    font-size: 20px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        flex: none;
+    }  
+`
+
 export const LanguagesWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 5%;
-    font-size: 20px;
 `
+
 export const IconWrapper = styled.div`
     text-align: center;
 `

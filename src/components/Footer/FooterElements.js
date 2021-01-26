@@ -57,5 +57,4 @@ export const ContactTitle = styled.div`
 export const ContactInfo = styled.div`
     color: #fff;
     font-size: 12px;
-    font-family: 'Lora', serif;
 `
