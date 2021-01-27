@@ -22,7 +22,13 @@ export const ProjectsHeader = styled.div`
 
 export const ProjectCardsContainer = styled.div`
     display: flex;
-    flex-direction: row;margin: auto;
+    flex-direction: row;
+    margin: auto;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 `
 
 export const ProjectCardWrapper = styled.div`
@@ -30,6 +36,10 @@ export const ProjectCardWrapper = styled.div`
     justify-content: space-between;
     flex-direction: column;
     width: 350px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const ProjectCardVisual = styled.img`
@@ -41,12 +51,12 @@ export const ProjectCardVisual = styled.img`
 export const ProjectCardTextWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 5px;
 `
 
 export const ProjectCardHeader = styled.div`
     text-align: center;
-    padding: 1%;
+    padding: 5px;
 `
 
 export const ProjectCardBody = styled.div`
@@ -57,7 +67,7 @@ export const ProjectCardBody = styled.div`
 export const IconLink = styled.a`
     cursor: pointer;
     text-align: center;
-    padding: 1%;
+    padding: 2px;
 `
 
 export const Github = styled(GithubImg)`
@@ -69,6 +79,6 @@ export const Github = styled(GithubImg)`
     }
 
     &:hover path {
-        fill: #c0cfb2 !important;
+        fill: #777775 !important;
         transition: all ease 0.3s;  
 `
