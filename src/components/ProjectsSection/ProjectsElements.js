@@ -23,7 +23,8 @@ export const ProjectsHeader = styled.div`
 export const ProjectCardsContainer = styled.div`
     display: flex;
     flex-direction: row;
-    margin: auto;
+    justify-content: space-around;
+    // flex-wrap: wrap;
 
     @media screen and (max-width: 768px) {
         display: flex;
@@ -39,6 +40,7 @@ export const ProjectCardWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        margin-bottom: 5%;
     }
 `
 
@@ -46,6 +48,10 @@ export const ProjectCardVisual = styled.img`
     width: 350px;
     height: auto;
     padding: 2%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const ProjectCardTextWrapper = styled.div`
