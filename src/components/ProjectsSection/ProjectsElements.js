@@ -6,31 +6,32 @@ export const ProjectsContainer = styled.div`
     justify-content: space-around;
     flex-direction: column;
     padding: 0.5rem calc((100vw - 1000px) / 2);
-`
+`;
 
 export const ProjectsHeaderWrapper = styled.div`
     display: flex;
     justify-content: center;
     margin: auto;
     padding: 5%;
-    bottom-border: 1px solid #000;
-`
+    /* width: 100%;
+    border-bottom: 1px solid #000; */
+`;
 
 export const ProjectsHeader = styled.div`
     font-size: 20px;
-`
+`;
 
 export const ProjectCardsContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    // flex-wrap: wrap;
+    // flex-wrap: wrap; uncomment when portfolio is added
 
     @media screen and (max-width: 768px) {
         display: flex;
         flex-wrap: wrap;
     }
-`
+`;
 
 export const ProjectCardWrapper = styled.div`
     display: flex;
@@ -42,7 +43,7 @@ export const ProjectCardWrapper = styled.div`
         width: 100%;
         margin-bottom: 5%;
     }
-`
+`;
 
 export const ProjectCardVisual = styled.img`
     width: 350px;
@@ -52,29 +53,33 @@ export const ProjectCardVisual = styled.img`
     @media screen and (max-width: 768px) {
         width: 100%;
     }
-`
+`;
 
 export const ProjectCardTextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding: 5px;
-`
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+`;
 
 export const ProjectCardHeader = styled.div`
     text-align: center;
     padding: 5px;
-`
+`;
 
 export const ProjectCardBody = styled.div`
     font-size: 12px;
     text-align: center;
-`
+`;
 
 export const IconLink = styled.a`
     cursor: pointer;
     text-align: center;
     padding: 2px;
-`
+`;
 
 export const Github = styled(GithubImg)`
     height: 30px;
@@ -86,5 +91,6 @@ export const Github = styled(GithubImg)`
 
     &:hover path {
         fill: #777775 !important;
-        transition: all ease 0.3s;  
-`
+        transition: all ease 0.3s;
+    }
+`;

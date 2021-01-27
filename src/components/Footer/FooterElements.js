@@ -11,7 +11,7 @@ const iconStyle = css`
     &:hover path {
         fill: #c0cfb2 !important;
         transition: all ease 0.3s;  
-`   
+`;
 
 export const FooterContainer = styled.footer`
     background-color: #3c3c3b;
@@ -27,34 +27,34 @@ export const FooterContainer = styled.footer`
 
 export const IconWrapper = styled.div`
 
-`
+`;
 
 export const IconLink = styled.a`
     cursor: pointer;
-`
+`;
 
 export const Github = styled(GithubImg)`
     ${iconStyle}
-`
+`;
 
 export const Linkedin = styled(LinkedinImg)`
     ${iconStyle}
-`
+`;
 
 export const Medium = styled(MediumImg)`
     ${iconStyle}
-`
+`;
 
 export const ContactWrapper = styled.div`
 
-`
+`;
 
 export const ContactTitle = styled.div`
     color: #fff;
     font-size: 20px;
-`
+`;
 
 export const ContactInfo = styled.div`
     color: #fff;
     font-size: 12px;
-`
+`;

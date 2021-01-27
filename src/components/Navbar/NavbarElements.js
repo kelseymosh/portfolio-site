@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { ReactComponent as LogoImg } from '../Logos/Logo.svg'
-// import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
     background: #fcfaf5;
@@ -47,7 +46,7 @@ export const Logo = styled(LogoImg)`
         fill: #c0cfb2 !important;
         transition: all ease 0.6s;
     }
-`
+`;
 
 export const MenuButton = styled.div`
     display: none;
@@ -62,7 +61,7 @@ export const MenuButton = styled.div`
         cursor: pointer;
         transition: all .5s ease-in-out;
     }
-` 
+`;
 
 export const NavMenu = styled.ul`
     display: flex;
@@ -93,8 +92,8 @@ export const NavLink = styled(Link)`
         color: #d4c8be;
     }
 
-    &.active {
-        color: #d4c8be;
+    &:active {
+        color: #d4c8be !important;
     }
 `;
 
