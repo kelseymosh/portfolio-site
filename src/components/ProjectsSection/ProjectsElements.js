@@ -1,25 +1,74 @@
 import styled from 'styled-components';
+import { ReactComponent as GithubImg } from '../Logos/Github.svg';
 
 export const ProjectsContainer = styled.div`
-
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0.5rem calc((100vw - 1000px) / 2);
 `
 
 export const ProjectsHeaderWrapper = styled.div`
-
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5%;
+    bottom-border: 1px solid #000;
 `
 
 export const ProjectsHeader = styled.div`
+    font-size: 20px;
+`
 
+export const ProjectCardsContainer = styled.div`
+    display: flex;
+    flex-direction: row;margin: auto;
 `
 
 export const ProjectCardWrapper = styled.div`
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 350px;
 `
 
-export const ProjectCardVisual = styled.div`
-
+export const ProjectCardVisual = styled.img`
+    width: 350px;
+    height: auto;
+    padding: 2%;
 `
 
-export const ProjectCardText = styled.div`
+export const ProjectCardTextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+`
 
+export const ProjectCardHeader = styled.div`
+    text-align: center;
+    padding: 1%;
+`
+
+export const ProjectCardBody = styled.div`
+    font-size: 12px;
+    text-align: center;
+`
+
+export const IconLink = styled.a`
+    cursor: pointer;
+    text-align: center;
+    padding: 1%;
+`
+
+export const Github = styled(GithubImg)`
+    height: 30px;
+    width: 30px;
+    
+    path {
+        fill: #3c3c3b !important;
+    }
+
+    &:hover path {
+        fill: #c0cfb2 !important;
+        transition: all ease 0.3s;  
 `

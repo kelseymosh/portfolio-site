@@ -75,7 +75,6 @@ export const IconLink = styled.a`
     cursor: pointer;
 `
 
-
 export const Github = styled(GithubImg)`
     ${iconStyle}
 `
