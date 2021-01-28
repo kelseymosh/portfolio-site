@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
+import ResumeSection from '../components/ResumeSection';
 
 const Resume = () => {
     return (
-        <div style={{ display: 'flex', justifyContent:'center', alignItems: 'center', height: '90vh'}}>
-            <h1>Resume</h1>
-        </div>
+        <ResumeSection/>
     )
 }
 
