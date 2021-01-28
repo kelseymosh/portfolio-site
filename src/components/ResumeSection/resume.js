@@ -1,26 +1,18 @@
 import React, { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+import { Document, Outline, Page, pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-function ResumePdf() {
-    // const [numPages, setNumPages] = useState(null);
-    // const [pageNumber, setPageNumber] = useState(1);
+export default function ResumePdf() {
+    const [pageNumber, setPageNumber] = useState(1);
 
-    // function onDocumentLoadSuccess({ numPages }) {
-    //     setNumPages(numPages);
-    // }
+    function onItemClick({ pageNumber: itemPageNumber }) {
+        setPageNumber(itemPageNumber);
+    }
 
     return (
-        <div>
-            <Document
-                file="/documents/KelseyOshiroResume.pdf"
-                // onLoadSuccess={onDocumentLoadSuccess}
-            >
-                {/* <Page pageNumber={pageNumber} /> */}
-            </Document>
-            {/* <p>Page {pageNumber} of {numPages}</p> */}
-        </div>
+        <Document file="/documents/KelseyOshiroResume.pdf">
+            <Outline onItemClick={onItemClick} />
+            <Page pageNumber={pageNumber || 1} />
+        </Document>
     );
 }
-
-export default ResumePdf
