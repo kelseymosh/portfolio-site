@@ -36,9 +36,28 @@ export const ResumeJpg = styled.img`
         display: flex;
         width: 90%;
         margin: auto;
+        padding: 2%;
     }
 `
 
 export const ResumeDownloadButton = styled.button`
+    display: none;
 
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+        width: 150px;
+        margin: auto;
+        border-radius: 0;
+        border: 1px solid #3c3c3b;
+        background-color: #3c3c3b;
+        padding: 2%;
+        cursor: pointer;
+        color: #fff !important;
+        font-size: 12px;
+
+        &:hover {
+            background-color: #c0cfb2;
+            transition: all ease 0.5s;
+        }
+    }
 `

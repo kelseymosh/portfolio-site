@@ -10,7 +10,8 @@ const iconStyle = css`
 
     &:hover path {
         fill: #c0cfb2 !important;
-        transition: all ease 0.3s;  
+        transition: all ease 0.3s;
+    }  
 `;
 
 export const FooterContainer = styled.footer`
