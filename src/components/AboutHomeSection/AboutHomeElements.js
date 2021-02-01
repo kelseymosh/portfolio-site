@@ -25,6 +25,7 @@ export const AboutMe = styled.div`
     border-right: 1px solid #000;
     width: 60%;
     padding: 5%;
+    font-size: calc(14px + 0.25vw);
 
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -34,7 +35,7 @@ export const AboutMe = styled.div`
 `
 
 export const AboutLink = styled(Link)`
-    font-size: 12px;
+    font-size: calc(9px + 0.25vw);
     color: #3c3c3b;
 `
 
@@ -79,5 +80,5 @@ export const Arrow = styled(BsArrowRight)`
 
 export const Language = styled.li`
     font-family: 'Lora', serif;
-    font-size: 12px !important;
+    font-size: calc(10px + 0.25vw);
 `

@@ -48,7 +48,7 @@ export const ResumeDownloadButton = styled.button`
         width: 150px;
         margin: auto;
         border-radius: 0;
-        border: 1px solid #3c3c3b;
+        border: none;
         background-color: #3c3c3b;
         padding: 2%;
         cursor: pointer;

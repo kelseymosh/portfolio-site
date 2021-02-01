@@ -18,7 +18,7 @@ export const ProjectsHeaderWrapper = styled.div`
 `;
 
 export const ProjectsHeader = styled.div`
-    font-size: 20px;
+    font-size: calc(30px + 0.25w);
 `;
 
 export const ProjectCardsContainer = styled.div`
