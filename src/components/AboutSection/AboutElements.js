@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { WiStars } from 'react-icons/wi'
 
 export const AboutSectionContainer = styled.div`
     display: flex;
@@ -62,6 +63,7 @@ export const AboutQuoteWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 50%;
     padding: 10%;
 
@@ -75,9 +77,15 @@ export const AboutQuote = styled.div`
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    font-size: calc(112.5% + 0.25vw);
+    font-size: calc(100% + 0.25vw);
     
-    &:last-child {
-        font-size: calc(100% + 0.25vw);
+    &:nth-child(2) {
+        margin-top: 3%;
+        font-size: calc(80% + 0.25vw);
     }
+`;
+
+export const StarsIcon = styled(WiStars)`
+    color: #3c3c3b;
+    font-size: calc(170% + 0.25vw);
 `;

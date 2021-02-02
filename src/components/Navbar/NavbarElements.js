@@ -84,7 +84,7 @@ export const NavLink = styled(Link)`
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     height: 100%;
     cursor: pointer;
 
@@ -97,29 +97,31 @@ export const NavLink = styled(Link)`
     }
 `;
 
-// export const NavBtn = styled.nav`
-//     display: flex;
-//     align-items: center;
-//     margin-right: 24px;
+export const NavBtn = styled.nav`
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
 
-//     @media screen and (max-width: 768px) {
-//         display: none;
-//     }
-// `
-// export const NavBtnLink = styled(Link)`
-//     border-radius: 4px;
-//     background: #256ce1;
-//     padding: 10px 22px;
-//     color: #fff;
-//     border: none;
-//     outline: none;
-//     cursor: pointer;
-//     transition: all 0.2s ease-in-out;
-//     text-decoration: none;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`
+export const NavBtnLink = styled(Link)`
+    /* border-radius: 4px; */
+    background: #d4c8be;
+    /* background: #c0cfb2; */
+    padding: 10px 22px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
-//     &:hover {
-//         transition: all 0.2s ease-in-out;
-//         background: #fff;
-//         color: #256ce1;
-//     }
-// `
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fcfaf5;
+        border: 1px solid #3c3c3b;
+        color: #3c3c3b;
+    }
+`

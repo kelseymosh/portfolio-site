@@ -15,7 +15,7 @@ export const AboutContainer = styled.div`
         display: flex;
         flex-wrap: wrap;
     }
-` 
+`;
 
 export const AboutMe = styled.div`
     display: flex;
@@ -25,19 +25,20 @@ export const AboutMe = styled.div`
     border-right: 1px solid #000;
     width: 60%;
     padding: 5%;
-    font-size: calc(14px + 0.25vw);
+    font-size: calc(87.5% + 0.25vw);
 
     @media screen and (max-width: 768px) {
         width: 100%;
         border-right: none;
         border-bottom: 1px solid #000;
     }
-`
+`;
 
 export const AboutLink = styled(Link)`
-    font-size: calc(9px + 0.25vw);
+    font-size: calc(50% + 0.25vw);
     color: #3c3c3b;
-`
+    margin-top: 1%;
+`;
 
 export const LanguagesContainer = styled.div`
     display: flex;
@@ -50,7 +51,7 @@ export const LanguagesContainer = styled.div`
         width: 100%;
         flex: none;
     }  
-`
+`;
 
 export const LanguagesWrapper = styled.div`
     display: flex;
@@ -59,26 +60,26 @@ export const LanguagesWrapper = styled.div`
 
 export const IconWrapper = styled.div`
     text-align: center;
-`
+`;
 
 export const FrontendIcon = styled(RiCodeBoxLine)`
     color: #3c3c3b;
-`
+`;
 
 export const BackendIcon = styled(HiOutlineDesktopComputer)`
     color: #3c3c3b;
-`
+`;
 
 export const DatabaseIcon = styled(FiDatabase)`
     color: #3c3c3b;
-`
+`;
 
 export const Arrow = styled(BsArrowRight)`
     color: #3c3c3b;
     width: 20px;
-`
+`;
 
 export const Language = styled.li`
     font-family: 'Lora', serif;
-    font-size: calc(10px + 0.25vw);
-`
+    font-size: calc(50% + 0.25vw);
+`;

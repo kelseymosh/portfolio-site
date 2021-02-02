@@ -8,6 +8,8 @@ import {
     NavMenu, 
     NavItem,
     NavLink,
+    NavBtn,
+    NavBtnLink,
 } from './NavbarElements';
 import Burger from '../Burger'
 
@@ -32,9 +34,12 @@ const Navbar = ({ toggle, open }) => {
                         <NavItem>
                             <NavLink to="/resume">RESUME</NavLink>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <NavLink to="/contact">CONTACT</NavLink>
-                        </NavItem>
+                        </NavItem> */}
+                        <NavBtn>
+                            <NavBtnLink to="/contact">CONTACT</NavBtnLink>
+                        </NavBtn>
                     </NavMenu>
                 </NavbarContainer>
             </Nav>
