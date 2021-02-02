@@ -17,9 +17,9 @@ const iconStyle = css`
 export const FooterContainer = styled.footer`
     background-color: #3c3c3b;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding : 48px 48px;
-    margin: 0 auto;
+    margin: auto;
 
     @media screen and (max-width: 768px) {
         display: none;

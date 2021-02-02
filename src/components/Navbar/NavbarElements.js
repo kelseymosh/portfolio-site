@@ -34,7 +34,7 @@ export const NavLogoLink = styled(Link)`
     justify-self: flex-start;
     cursor: pointer;
     display: flex;
-    align-items:center;
+    align-items: center;
     margin-left: 24px;
 `;
 
@@ -100,16 +100,15 @@ export const NavLink = styled(Link)`
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
-    margin-right: 24px;
+    margin: 0 24px;
 
     @media screen and (max-width: 768px) {
         display: none;
     }
 `
 export const NavBtnLink = styled(Link)`
-    /* border-radius: 4px; */
+    border-radius: 2px;
     background: #d4c8be;
-    /* background: #c0cfb2; */
     padding: 10px 22px;
     color: #fff;
     border: none;

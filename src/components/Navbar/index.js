@@ -34,9 +34,6 @@ const Navbar = ({ toggle, open }) => {
                         <NavItem>
                             <NavLink to="/resume">RESUME</NavLink>
                         </NavItem>
-                        {/* <NavItem>
-                            <NavLink to="/contact">CONTACT</NavLink>
-                        </NavItem> */}
                         <NavBtn>
                             <NavBtnLink to="/contact">CONTACT</NavBtnLink>
                         </NavBtn>
