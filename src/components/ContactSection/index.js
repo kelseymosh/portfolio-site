@@ -5,9 +5,12 @@ import{ init } from 'emailjs-com';
 import {
     ContactFormContainer,
     ContactForm,
+    ContactFormLabel,
     ContactFormInput,
     ContactFormMessageInput,
     ContactFormSubmitButton,
+    ContactImageWrapper,
+    ContactImage,
 } from './ContactElements'
 init(`${process.env.REACT_APP_USER_ID}`);
 
@@ -33,6 +36,7 @@ const Contact = () => {
     return (
         <ContactFormContainer>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
+                <ContactFormLabel>NAME</ContactFormLabel>
                 <ContactFormInput 
                     name="name" 
                     ref={
@@ -46,7 +50,8 @@ const Contact = () => {
                     }
                 /><br/>
                 {errors.name && errors.name.message}<br/>
-
+                
+                <ContactFormLabel>EMAIL</ContactFormLabel>
                 <ContactFormInput 
                     name="email" 
                     ref={
@@ -60,7 +65,8 @@ const Contact = () => {
                     }
                 /><br/>
                 {errors.email && errors.email.message}<br/>
-
+                
+                <ContactFormLabel>MESSAGE</ContactFormLabel>
                 <ContactFormMessageInput 
                     name="comment" 
                     ref={
@@ -71,8 +77,11 @@ const Contact = () => {
                 /><br/>
                 {errors.comment && "Oops, you forgot your message!"}<br/>
 
-                <ContactFormSubmitButton type="submit"/>
+                <ContactFormSubmitButton type="submit" value="SUBMIT"/>
             </ContactForm>
+                <ContactImageWrapper>
+                    <ContactImage src="/images/Contact.svg" alt="lets chat"/>
+                </ContactImageWrapper>
         </ContactFormContainer>
     );
 }
