@@ -5,13 +5,14 @@ import {
     SidebarMenu,
     MenuTitle,
     SidebarLink,
+    SidebarBtn,
+    SidebarBtnLink,
     IconWrapper,
     IconLink,
     Github,
     Linkedin,
     Medium,
 } from './SidebarElements'
-
 
 const Sidebar = ({ open, toggle }) => {
     return (
@@ -22,7 +23,9 @@ const Sidebar = ({ open, toggle }) => {
                     <SidebarLink to="about" onClick={toggle}>ABOUT</SidebarLink>
                     <SidebarLink to="projects" onClick={toggle}>PROJECTS</SidebarLink>
                     <SidebarLink to="resume" onClick={toggle}>RESUME</SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>CONTACT</SidebarLink>
+                    <SidebarBtn>
+                        <SidebarBtnLink to="/contact">CONTACT</SidebarBtnLink>
+                    </SidebarBtn>
                     <IconWrapper>
                         <IconLink href="https://github.com/kelseymosh">
                             <Github/>

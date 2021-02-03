@@ -6,9 +6,6 @@ import {
     Github,
     Linkedin,
     Medium, 
-    ContactWrapper,
-    ContactTitle,
-    ContactInfo,
 } from './FooterElements'
 
 const Footer = () => {
@@ -25,11 +22,6 @@ const Footer = () => {
                     <Medium/>
                 </IconLink>
                 </IconWrapper>
-                <ContactWrapper>
-                    <ContactTitle>CONTACT</ContactTitle>
-                    <ContactInfo>kelsocodes@gmail.com</ContactInfo>
-                    <ContactInfo>970-672-7601</ContactInfo>
-                </ContactWrapper>
         </FooterContainer>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
 import {
     ContactFormContainer,
     ContactForm,
@@ -8,26 +9,26 @@ import {
     ContactFormMessageInput,
     ContactFormSubmitButton,
 } from './ContactElements'
+init(`${process.env.REACT_APP_USER_ID}`);
 
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = (data, e) => {
         alert(`Thanks for your message from ${data.email}!`);
-        const templateId = "template_41jl0ky";
-        const serviceId = "service_dv2cmau";
+        const templateId = `${process.env.REACT_APP_TEMPLATE_ID}`;
+        const serviceId = `${process.env.REACT_APP_SERVICE_ID}`;
         sendFeedback(serviceId, templateId, { from_name: data.name, message: data.comment, reply_to: data.email })
         e.target.reset();
     };
 
     const sendFeedback = (serviceId, templateId, variables) => {
         emailjs.send(
-            serviceId, templateId,
-            variables
+            serviceId, templateId, variables
         ).then(result => {
             console.log("Email successfully sent!")
         })
         .catch(error => console.error("There has been an error. Here are some thoughts on the error that occured:", error))
-    }
+    };
 
     return (
         <ContactFormContainer>

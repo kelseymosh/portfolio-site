@@ -45,17 +45,3 @@ export const Linkedin = styled(LinkedinImg)`
 export const Medium = styled(MediumImg)`
     ${iconStyle}
 `;
-
-export const ContactWrapper = styled.div`
-
-`;
-
-export const ContactTitle = styled.div`
-    color: #fff;
-    font-size: 20px;
-`;
-
-export const ContactInfo = styled.div`
-    color: #fff;
-    font-size: 12px;
-`;
