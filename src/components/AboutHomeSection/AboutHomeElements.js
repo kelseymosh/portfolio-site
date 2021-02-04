@@ -80,6 +80,5 @@ export const Arrow = styled(BsArrowRight)`
 `;
 
 export const Language = styled.li`
-    font-family: 'Lora', serif;
     font-size: calc(50% + 0.25vw);
 `;

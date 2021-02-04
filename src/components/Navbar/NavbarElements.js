@@ -40,9 +40,13 @@ export const NavLogoLink = styled(Link)`
 
 export const Logo = styled(LogoImg)`
     height: 80px;
-    width: 175px;
+    width: 80px;
 
     &:hover g {
+        fill: #c0cfb2 !important;
+        transition: all ease 0.6s;
+    }
+    &:hover path {
         fill: #c0cfb2 !important;
         transition: all ease 0.6s;
     }

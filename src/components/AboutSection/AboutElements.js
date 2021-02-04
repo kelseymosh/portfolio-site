@@ -50,6 +50,7 @@ export const AboutHeader = styled.div`
     font-size: calc((80% + 0.25vw) * 2);
     margin-bottom: 3%;
     text-align: center;
+    font-family: 'Bodoni Moda', serif;
 `;
 
 export const AboutBody = styled.div`

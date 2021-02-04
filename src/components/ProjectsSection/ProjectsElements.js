@@ -18,7 +18,9 @@ export const ProjectsHeaderWrapper = styled.div`
 `;
 
 export const ProjectsHeader = styled.div`
-    font-size: calc(100% + 0.25vw);
+    font-size: calc((80% + 0.25vw) * 2);
+    font-family: 'Bodoni Moda', serif;
+    color: #3c3c3b;
 `;
 
 export const ProjectCardsContainer = styled.div`

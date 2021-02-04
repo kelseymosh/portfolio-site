@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
     @media screen and (max-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        padding: 0;
+        padding: none;
     }
 `;
 
@@ -16,6 +16,7 @@ export const HeroImageWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60%;
 
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -23,7 +24,7 @@ export const HeroImageWrapper = styled.div`
 `;
 
 export const HeroImage = styled.img`
-    height: 500px;
+    width: 100%;
 `;
 
 export const HeroVideoWrapper = styled.div`
