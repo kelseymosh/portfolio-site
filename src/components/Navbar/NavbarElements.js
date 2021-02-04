@@ -39,7 +39,7 @@ export const NavLogoLink = styled(Link)`
 `;
 
 export const Logo = styled(LogoImg)`
-    height: 70px;
+    height: 80px;
     width: 175px;
 
     &:hover g {

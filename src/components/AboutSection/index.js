@@ -16,7 +16,7 @@ const About = () => {
     return (
         <AboutSectionContainer>
             <AboutImageWrapper>
-                <AboutImage src="/images/About.jpg" alt="about"/>
+                <AboutImage src="/assets/About.jpg" alt="about"/>
             </AboutImageWrapper>
             <AboutTextContainer>
                 <AboutTextWrapper>

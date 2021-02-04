@@ -38,7 +38,7 @@ const Contact = () => {
     return (
         <ContactFormContainer>
             <ContactImageWrapper>
-                <ContactImageMobile src="/images/ContactMobile.svg" alt="lets chat"/>
+                <ContactImageMobile src="/assets/ContactMobile.svg" alt="lets chat"/>
             </ContactImageWrapper>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
                 <ContactFormLabel>NAME</ContactFormLabel>
@@ -85,7 +85,7 @@ const Contact = () => {
                 <ContactFormSubmitButton type="submit" value="SUBMIT"/>
             </ContactForm>
                 <ContactImageWrapper>
-                    <ContactImage src="/images/Contact.svg" alt="lets chat"/>
+                    <ContactImage src="/assets/Contact.svg" alt="lets chat"/>
                 </ContactImageWrapper>
         </ContactFormContainer>
     );
