@@ -15,6 +15,7 @@ import {
 import Pokemon from '../Gifs/Pokemon.gif'
 import Props from '../Gifs/Props.gif'
 import Critterpedia from '../Gifs/Critterpedia.gif'
+import Portfolio from '../Gifs/Portfolio.gif'
 
 const Projects = () => {
     return (
@@ -37,6 +38,14 @@ const Projects = () => {
                         <ProjectCardHeader>PROPS</ProjectCardHeader>
                         <ProjectCardBody>Want to increase your houseplant collection while saving money? Props is a web app for plant lovers to advertise and trade their propagated houseplants.</ProjectCardBody>
                         <IconLink href="https://github.com/kelseymosh/props-fe"><Github/></IconLink>
+                    </ProjectCardTextWrapper>
+                </ProjectCardWrapper>
+                <ProjectCardWrapper>
+                    <ProjectCardVisual src={Portfolio} alt="Portfolio Website gif"/>
+                    <ProjectCardTextWrapper>
+                        <ProjectCardHeader>PORTFOLIO</ProjectCardHeader>
+                        <ProjectCardBody>This is the current version of the portfolio site you are on. Featuring an about section, resume download, project page, and email contact form.</ProjectCardBody>
+                        <IconLink href="https://github.com/kelseymosh/portfolio-site"><Github/></IconLink>
                     </ProjectCardTextWrapper>
                 </ProjectCardWrapper>
                 <ProjectCardWrapper>

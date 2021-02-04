@@ -27,7 +27,7 @@ export const ProjectCardsContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    // flex-wrap: wrap; uncomment when portfolio is added
+    flex-wrap: wrap;
 
     @media screen and (max-width: 768px) {
         display: flex;
@@ -40,10 +40,10 @@ export const ProjectCardWrapper = styled.div`
     justify-content: space-between;
     flex-direction: column;
     width: 350px;
+    margin-bottom: 5%;
 
     @media screen and (max-width: 768px) {
         width: 100%;
-        margin-bottom: 5%;
     }
 `;
 

@@ -43,11 +43,11 @@ export const Logo = styled(LogoImg)`
     width: 80px;
 
     &:hover g {
-        fill: #c0cfb2 !important;
+        fill: #d4c8be !important;
         transition: all ease 0.6s;
     }
     &:hover path {
-        fill: #c0cfb2 !important;
+        fill: #d4c8be !important;
         transition: all ease 0.6s;
     }
 `;
