@@ -8,6 +8,7 @@ import {
     ContactFormLabel,
     ContactFormInput,
     ContactFormMessageInput,
+    ContactFormErrorMessageWrapper,
     ContactFormSubmitButton,
     ContactImageWrapper,
     ContactImage,
@@ -52,8 +53,8 @@ const Contact = () => {
                             }
                         })
                     }
-                /><br/>
-                {errors.name && errors.name.message}<br/>
+                />
+                <ContactFormErrorMessageWrapper>{errors.name && errors.name.message}<br/></ContactFormErrorMessageWrapper>
                 
                 <ContactFormLabel>EMAIL</ContactFormLabel>
                 <ContactFormInput 
@@ -67,8 +68,8 @@ const Contact = () => {
                             }
                         })
                     }
-                /><br/>
-                {errors.email && errors.email.message}<br/>
+                />
+                <ContactFormErrorMessageWrapper>{errors.email && errors.email.message}<br/></ContactFormErrorMessageWrapper>
                 
                 <ContactFormLabel>MESSAGE</ContactFormLabel>
                 <ContactFormMessageInput 
@@ -78,8 +79,8 @@ const Contact = () => {
                             required: true
                         })
                     }
-                /><br/>
-                {errors.comment && "Oops, you forgot your message!"}<br/>
+                />
+                <ContactFormErrorMessageWrapper>{errors.comment && "Oops, you forgot your message!"}<br/></ContactFormErrorMessageWrapper>
 
                 <ContactFormSubmitButton type="submit" value="SUBMIT"/>
             </ContactForm>

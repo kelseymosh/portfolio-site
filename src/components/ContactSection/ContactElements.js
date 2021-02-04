@@ -44,6 +44,12 @@ export const ContactFormMessageInput = styled.textarea`
     height: 100px;
 `;
 
+export const ContactFormErrorMessageWrapper = styled.div`
+    padding: 2% 3% 5% 3%;
+    font-size: calc(50% + 0.25vw);
+    color: #a5806e;
+`;
+
 export const ContactFormSubmitButton = styled.input`
     border-radius: 2px;
     background: #d4c8be;
