@@ -11,6 +11,7 @@ import {
     ContactFormSubmitButton,
     ContactImageWrapper,
     ContactImage,
+    ContactImageMobile,
 } from './ContactElements'
 init(`${process.env.REACT_APP_USER_ID}`);
 
@@ -35,6 +36,9 @@ const Contact = () => {
 
     return (
         <ContactFormContainer>
+            <ContactImageWrapper>
+                <ContactImageMobile src="/images/ContactMobile.svg" alt="lets chat"/>
+            </ContactImageWrapper>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
                 <ContactFormLabel>NAME</ContactFormLabel>
                 <ContactFormInput 

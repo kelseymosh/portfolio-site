@@ -2,15 +2,25 @@ import styled from 'styled-components'
 
 export const ContactFormContainer = styled.div`
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding: 5%;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 5%;
+    }
 `;
 
 export const ContactForm = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 30%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const ContactFormLabel = styled.div`
@@ -23,11 +33,6 @@ export const ContactFormInput = styled.input`
     background-color: #fcfaf5;
     outline: none;
     padding: 3%;
-    width: 250px;
-
-    @media screen and (max-width: 768px) {
-        width: 150px;
-    }
 `;
 
 export const ContactFormMessageInput = styled.textarea`
@@ -35,13 +40,8 @@ export const ContactFormMessageInput = styled.textarea`
     border-bottom: 1px solid #3c3c3b;
     background-color: #fcfaf5;
     outline: none;
-    width: 250px;
+    padding: 3%;
     height: 100px;
-
-    @media screen and (max-width: 768px) {
-        width: 150px;
-        height: 75px;
-    }
 `;
 
 export const ContactFormSubmitButton = styled.input`
@@ -64,14 +64,27 @@ export const ContactFormSubmitButton = styled.input`
 `;
 
 export const ContactImageWrapper = styled.div`
-    display: flex;
-    padding: 0 2%;
+    padding-left: 2%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 5% 0;
+    }
 `;
 
 export const ContactImage = styled.img`
-        
+    display: flex;
+
     @media screen and (max-width: 768px) {
-        width: 150px;
-        height: auto;
+        display: none;
+    }
+`;
+
+export const ContactImageMobile = styled.img`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        width: 100%;
     }
 `;
