@@ -28,7 +28,6 @@ const AboutHomeSection = () => {
                         <Language>HTML</Language>
                         <Language>CSS</Language>
                         <Language>Javascript</Language>
-                        <Language>Material UI</Language>
                         <Language>Bootstrap</Language>
                         <Language>Styled Components</Language>
                 </LanguagesWrapper>
