@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
     FooterContainer, 
     IconWrapper,
@@ -6,7 +6,7 @@ import {
     Github,
     Linkedin,
     Medium, 
-} from './FooterElements'
+} from './FooterElements';
 
 const Footer = () => {
     return (

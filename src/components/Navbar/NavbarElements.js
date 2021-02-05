@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import { ReactComponent as LogoImg } from '../Logos/Logo.svg'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { ReactComponent as LogoImg } from '../Logos/Logo.svg';
 
 export const Nav = styled.nav`
     background: #fcfaf5;
@@ -109,7 +109,8 @@ export const NavBtn = styled.nav`
     @media screen and (max-width: 768px) {
         display: none;
     }
-`
+`;
+
 export const NavBtnLink = styled(Link)`
     border-radius: 2px;
     background: #d4c8be;
@@ -127,4 +128,4 @@ export const NavBtnLink = styled(Link)`
         border: 1px solid #3c3c3b;
         color: #3c3c3b;
     }
-`
+`;

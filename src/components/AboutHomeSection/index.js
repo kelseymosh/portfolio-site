@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { 
     AboutContainer,
     AboutMe,
@@ -11,7 +11,7 @@ import {
     BackendIcon,
     DatabaseIcon,
     Language,
-} from './AboutHomeElements'
+} from './AboutHomeElements';
 
 const AboutHomeSection = () => {
     return (

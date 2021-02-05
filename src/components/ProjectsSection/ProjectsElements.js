@@ -13,8 +13,6 @@ export const ProjectsHeaderWrapper = styled.div`
     justify-content: center;
     margin: auto;
     padding: 5%;
-    /* width: 100%;
-    border-bottom: 1px solid #000; */
 `;
 
 export const ProjectsHeader = styled.div`

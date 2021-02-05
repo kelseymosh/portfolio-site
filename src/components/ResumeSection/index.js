@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import {
     ResumeSectionContainer,
     ResumeWrapper,
     ResumePdf,
     ResumeJpg,
     ResumeDownloadButton,
-} from './ResumeElements'
+} from './ResumeElements';
 
 const Resume = () => {
     return (
@@ -13,7 +13,7 @@ const Resume = () => {
             <ResumeWrapper>
                 <ResumePdf data="/assets/KelseyOshiroResume.pdf" type="application/pdf"/>
                 <ResumeJpg src="/assets/KelseyOshiroResume.jpg"/>
-                <ResumeDownloadButton onClick={(e) =>  window.open("/assets/KelseyOshiroResume.pdf", "_blank") }>DOWNLOAD</ResumeDownloadButton>
+                <ResumeDownloadButton onClick={(e) => window.open("/assets/KelseyOshiroResume.pdf", "_blank") }>DOWNLOAD</ResumeDownloadButton>
             </ResumeWrapper>
         </ResumeSectionContainer>
     )

@@ -1,9 +1,9 @@
-import styled from 'styled-components'
-import { css } from 'styled-components'
-import { Link } from 'react-router-dom'
-import { ReactComponent as GithubImg } from '../Logos/Github.svg'
-import { ReactComponent as LinkedinImg } from '../Logos/Linkedin.svg'
-import { ReactComponent as MediumImg } from '../Logos/Medium.svg'
+import styled from 'styled-components';
+import { css } from 'styled-components';
+import { Link } from 'react-router-dom';
+import { ReactComponent as GithubImg } from '../Logos/Github.svg';
+import { ReactComponent as LinkedinImg } from '../Logos/Linkedin.svg';
+import { ReactComponent as MediumImg } from '../Logos/Medium.svg';
 
 const iconStyle = css`
     height: 30px;
@@ -12,7 +12,7 @@ const iconStyle = css`
     path {
         fill: #3c3c3b !important;
     }
-`
+`;
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -36,7 +36,7 @@ export const SidebarWrapper = styled.div`
 export const MenuTitle = styled.p`
     font-size: 12px;
     text-align: center;
-`
+`;
 
 export const SidebarMenu = styled.ul`
     display: grid;
@@ -68,7 +68,8 @@ export const SidebarLink = styled(Link)`
 
 export const SidebarBtn = styled.nav`
     margin: auto;
-`
+`;
+
 export const SidebarBtnLink = styled(Link)`
     border-radius: 2px;
     background: #d4c8be;
@@ -86,24 +87,24 @@ export const SidebarBtnLink = styled(Link)`
         border: 1px solid #3c3c3b;
         color: #3c3c3b;
     }
-`
+`;
 
 export const IconWrapper = styled.div`
     margin: auto;
-`
+`;
 
 export const IconLink = styled.a`
     cursor: pointer;
-`
+`;
 
 export const Github = styled(GithubImg)`
     ${iconStyle}
-`
+`;
 
 export const Linkedin = styled(LinkedinImg)`
     ${iconStyle}
-`
+`;
 
 export const Medium = styled(MediumImg)`
     ${iconStyle}
-`
+`;

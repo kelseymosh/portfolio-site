@@ -1,8 +1,8 @@
-import styled from 'styled-components'
-import { css } from 'styled-components'
-import { ReactComponent as GithubImg } from '../Logos/Github.svg'
-import { ReactComponent as LinkedinImg } from '../Logos/Linkedin.svg'
-import { ReactComponent as MediumImg } from '../Logos/Medium.svg'
+import styled from 'styled-components';
+import { css } from 'styled-components';
+import { ReactComponent as GithubImg } from '../Logos/Github.svg';
+import { ReactComponent as LinkedinImg } from '../Logos/Linkedin.svg';
+import { ReactComponent as MediumImg } from '../Logos/Medium.svg';
 
 const iconStyle = css`
     height: 30px;
@@ -27,7 +27,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const IconWrapper = styled.div`
-
+    display: flex;
 `;
 
 export const IconLink = styled.a`

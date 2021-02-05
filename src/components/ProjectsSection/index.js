@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { 
     ProjectsContainer,
     ProjectsHeaderWrapper,
@@ -11,11 +11,11 @@ import {
     ProjectCardBody,
     IconLink,
     Github,
-} from './ProjectsElements'
-import Pokemon from '../Gifs/Pokemon.gif'
-import Props from '../Gifs/Props.gif'
-import Critterpedia from '../Gifs/Critterpedia.gif'
-import Portfolio from '../Gifs/Portfolio.gif'
+} from './ProjectsElements';
+import Pokemon from '../Gifs/Pokemon.gif';
+import Props from '../Gifs/Props.gif';
+import Critterpedia from '../Gifs/Critterpedia.gif';
+import Portfolio from '../Gifs/Portfolio.gif';
 
 const Projects = () => {
     return (

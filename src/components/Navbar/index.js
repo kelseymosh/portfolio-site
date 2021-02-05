@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { 
     Nav, 
     NavbarContainer,
@@ -11,7 +11,7 @@ import {
     NavBtn,
     NavBtnLink,
 } from './NavbarElements';
-import Burger from '../Burger'
+import Burger from '../Burger';
 
 const Navbar = ({ toggle, open }) => {
     return (

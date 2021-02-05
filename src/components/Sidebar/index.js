@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { 
     SidebarContainer,
     SidebarWrapper,
@@ -12,7 +12,7 @@ import {
     Github,
     Linkedin,
     Medium,
-} from './SidebarElements'
+} from './SidebarElements';
 
 const Sidebar = ({ open, toggle }) => {
     return (

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
     AboutSectionContainer,
     AboutImageWrapper,
@@ -10,7 +10,7 @@ import {
     AboutQuoteWrapper,
     AboutQuote,
     StarsIcon,
-} from  './AboutElements'
+} from  './AboutElements';
 
 const About = () => {
     return (

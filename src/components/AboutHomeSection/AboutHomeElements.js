@@ -1,9 +1,9 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import { RiCodeBoxLine } from 'react-icons/ri'
-import { HiOutlineDesktopComputer } from 'react-icons/hi'
-import { FiDatabase } from 'react-icons/fi'
-import { BsArrowRight } from 'react-icons/bs'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { RiCodeBoxLine } from 'react-icons/ri';
+import { HiOutlineDesktopComputer } from 'react-icons/hi';
+import { FiDatabase } from 'react-icons/fi';
+import { BsArrowRight } from 'react-icons/bs';
 
 export const AboutContainer = styled.div`
     display: flex;

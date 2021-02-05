@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { WiStars } from 'react-icons/wi'
+import { WiStars } from 'react-icons/wi';
 
 export const AboutSectionContainer = styled.div`
     display: flex;

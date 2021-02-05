@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutHomeSection from '../components/AboutHomeSection';
 
