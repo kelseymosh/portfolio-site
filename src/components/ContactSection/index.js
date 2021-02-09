@@ -22,7 +22,7 @@ const Contact = () => {
         alert(`Thanks for your message from ${data.email}!`);
         const templateId = `${process.env.REACT_APP_TEMPLATE_ID}`;
         const serviceId = `${process.env.REACT_APP_SERVICE_ID}`;
-        sendFeedback(serviceId, templateId, { from_name: data.name, message: data.comment, reply_to: data.email })
+        sendFeedback(serviceId, templateId, { from_name: data.name, message: data.comment, reply_to: data.email });
         e.target.reset();
     };
 

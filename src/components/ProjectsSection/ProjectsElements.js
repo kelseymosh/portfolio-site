@@ -90,7 +90,7 @@ export const Github = styled(GithubImg)`
     }
 
     &:hover path {
-        fill: #777775 !important;
+        fill: #d4c8be !important;
         transition: all ease 0.3s;
     }
 `;

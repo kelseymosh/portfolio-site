@@ -16,7 +16,6 @@ export const HeroImageWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
 
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -29,7 +28,7 @@ export const HeroImage = styled.img`
 
 export const HeroVideoWrapper = styled.div`
     display: flex;
-    width: 100%;
+    width: 50%;
 
     @media screen and (max-width: 768px) {
         display: none;
