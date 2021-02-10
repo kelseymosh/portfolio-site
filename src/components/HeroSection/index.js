@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactPlayer from 'react-player'
 import { 
     HeroContainer,
     HeroImageWrapper,
     HeroImage,
     HeroVideoWrapper,
-} from './HeroElements'
+    Video,
+} from './HeroElements';
 
 const HeroSection = () => {
     return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
                 <HeroImage src="/assets/Hero.jpg" alt="Kelsey Oshiro image" />
             </HeroImageWrapper>
             <HeroVideoWrapper>
-                <ReactPlayer url="/assets/Hero.mp4" playing={true} muted={true}/>
+                <Video url="/assets/Hero.mp4" playing={true} muted={true}/>
             </HeroVideoWrapper>
         </HeroContainer>
     )

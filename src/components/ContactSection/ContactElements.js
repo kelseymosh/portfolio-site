@@ -51,20 +51,20 @@ export const ContactFormErrorMessageWrapper = styled.div`
 `;
 
 export const ContactFormSubmitButton = styled.input`
-    border-radius: 2px;
-    background: #d4c8be;
+    border-radius: 2px !important;
+    background: #d4c8be !important;
     padding: 10px 22px;
     color: #fff;
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fcfaf5;
-        border: 1px solid #3c3c3b;
+        background: #fcfaf5 !important;
+        border: 1px solid #3c3c3b !important;
         color: #3c3c3b;
     }
 `;

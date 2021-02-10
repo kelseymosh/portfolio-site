@@ -20,10 +20,6 @@ export const FooterContainer = styled.footer`
     justify-content: space-around;
     padding : 48px 48px;
     margin: auto;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
 `;
 
 export const IconWrapper = styled.div`
