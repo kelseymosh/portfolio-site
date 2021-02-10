@@ -28,18 +28,26 @@ export const ContactFormLabel = styled.div`
 `;
 
 export const ContactFormInput = styled.input`
-    border: none;
-    border-bottom: 1px solid #3c3c3b;
+    -webkit-appearance: none;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #3c3c3b !important;
     background-color: #fcfaf5;
     outline: none;
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.075) !important;
     padding: 3%;
 `;
 
 export const ContactFormMessageInput = styled.textarea`
-    border: none;
-    border-bottom: 1px solid #3c3c3b;
+    -webkit-appearance: none;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #3c3c3b !important;
     background-color: #fcfaf5;
     outline: none;
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.075) !important;
     padding: 3%;
     height: 100px;
 `;
@@ -51,9 +59,10 @@ export const ContactFormErrorMessageWrapper = styled.div`
 `;
 
 export const ContactFormSubmitButton = styled.input`
+    -webkit-appearance: none;
     border-radius: 2px !important;
     background: #d4c8be !important;
-    padding: 10px 22px;
+    padding: 10px 22px !important;
     color: #fff;
     border: none !important;
     outline: none !important;
@@ -63,8 +72,8 @@ export const ContactFormSubmitButton = styled.input`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fcfaf5 !important;
-        border: 1px solid #3c3c3b !important;
+        background: #fcfaf5;
+        border: 1px solid #3c3c3b;
         color: #3c3c3b;
     }
 `;
