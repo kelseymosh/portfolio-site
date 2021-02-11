@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import ReactPlayer from 'react-player';
 
 export const HeroContainer = styled.div` 
     display: flex;
@@ -31,14 +30,6 @@ export const HeroVideoWrapper = styled.div`
     display: flex;
     width: 50%;
 
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-`;
-
-export const Video = styled(ReactPlayer)`
-    display: flex;
-    
     @media screen and (max-width: 768px) {
         display: none;
     }

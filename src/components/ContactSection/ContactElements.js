@@ -29,25 +29,29 @@ export const ContactFormLabel = styled.div`
 
 export const ContactFormInput = styled.input`
     -webkit-appearance: none;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom: 1px solid #3c3c3b !important;
+    -moz-appearance: none;
+    appearance: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: 1px solid #3c3c3b;
     background-color: #fcfaf5;
     outline: none;
-    box-shadow: inset 0 0px 0px rgba(0,0,0,.075) !important;
     padding: 3%;
 `;
 
 export const ContactFormMessageInput = styled.textarea`
     -webkit-appearance: none;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-bottom: 1px solid #3c3c3b !important;
+    -moz-appearance: none;
+    appearance: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #3c3c3b;
+    border-radius: 0;
     background-color: #fcfaf5;
     outline: none;
-    box-shadow: inset 0 0px 0px rgba(0,0,0,.075) !important;
     padding: 3%;
     height: 100px;
 `;
@@ -60,12 +64,14 @@ export const ContactFormErrorMessageWrapper = styled.div`
 
 export const ContactFormSubmitButton = styled.input`
     -webkit-appearance: none;
-    border-radius: 2px !important;
-    background: #d4c8be !important;
-    padding: 10px 22px !important;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 2px;
+    background: #d4c8be;
+    padding: 10px 22px;
     color: #fff;
-    border: none !important;
-    outline: none !important;
+    border: none;
+    outline: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
@@ -75,6 +81,14 @@ export const ContactFormSubmitButton = styled.input`
         background: #fcfaf5;
         border: 1px solid #3c3c3b;
         color: #3c3c3b;
+    }
+    @media screen and (max-width: 768px) {
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            background: #d4c8be;
+            color: #3c3c3b;
+            border: none;
+        }
     }
 `;
 
