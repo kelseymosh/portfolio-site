@@ -82,14 +82,6 @@ export const ContactFormSubmitButton = styled.input`
         border: 1px solid #3c3c3b;
         color: #3c3c3b;
     }
-    @media screen and (max-width: 768px) {
-        &:hover {
-            transition: all 0.2s ease-in-out;
-            background: #d4c8be;
-            color: #3c3c3b;
-            border: none;
-        }
-    }
 `;
 
 export const ContactImageWrapper = styled.div`

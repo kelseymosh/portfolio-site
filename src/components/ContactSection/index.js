@@ -19,7 +19,7 @@ init(`${process.env.REACT_APP_USER_ID}`);
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = (data, e) => {
-        alert(`Thanks for your message from ${data.email}!`);
+        alert(`Thanks for your message ${data.name}!`);
         const templateId = `${process.env.REACT_APP_TEMPLATE_ID}`;
         const serviceId = `${process.env.REACT_APP_SERVICE_ID}`;
         sendFeedback(serviceId, templateId, { from_name: data.name, message: data.comment, reply_to: data.email });

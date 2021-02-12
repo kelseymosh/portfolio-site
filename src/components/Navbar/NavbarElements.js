@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink as Link } from 'react-router-dom';
 import { ReactComponent as LogoImg } from '../Logos/Logo.svg';
 
 export const Nav = styled.nav`
@@ -42,13 +42,15 @@ export const Logo = styled(LogoImg)`
     height: 80px;
     width: 80px;
 
-    &:hover g {
-        fill: #d4c8be !important;
-        transition: all ease 0.6s;
-    }
-    &:hover path {
-        fill: #d4c8be !important;
-        transition: all ease 0.6s;
+    @media screen and (min-width: 768px) {
+        &:hover g {
+            fill: #d4c8be !important;
+            transition: all ease 0.6s;
+        }
+        &:hover path {
+            fill: #d4c8be !important;
+            transition: all ease 0.6s;
+        }
     }
 `;
 
@@ -84,20 +86,35 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(Link)`
-    color: #3c3c3b;
     display: flex;
     align-items: center;
-    text-decoration: none;
     padding: 0 1.5rem;
     height: 100%;
     cursor: pointer;
+    color: #3c3c3b;
+    position: relative;
+    text-decoration: none;
 
     &:hover {
         color: #d4c8be;
     }
 
-    &:active {
-        color: #d4c8be !important;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 2rem;
+        left: 0;
+        background-color: #d4c8be;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
     }
 `;
 

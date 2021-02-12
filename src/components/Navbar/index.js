@@ -26,13 +26,13 @@ const Navbar = ({ toggle, open }) => {
                     </MenuButton>
                     <NavMenu>
                         <NavItem>
-                            <NavLink to="/about">ABOUT</NavLink>
+                            <NavLink to="/about" activeStyle={{ color: '#d4c8be' }}>ABOUT</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="/projects">PROJECTS</NavLink>
+                            <NavLink to="/projects" activeStyle={{ color: '#d4c8be' }}>PROJECTS</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="/resume">RESUME</NavLink>
+                            <NavLink to="/resume" activeStyle={{ color: '#d4c8be' }}>RESUME</NavLink>
                         </NavItem>
                         <NavBtn>
                             <NavBtnLink to="/contact">CONTACT</NavBtnLink>
