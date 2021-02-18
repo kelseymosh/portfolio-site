@@ -36,8 +36,6 @@ const AboutHomeSection = () => {
                         <IconWrapper><BackendIcon/><DatabaseIcon/></IconWrapper>
                         <Language>Ruby</Language>
                         <Language>Ruby on Rails</Language>
-                        <Language>Python</Language>
-                        <Language>Django</Language>
                 </LanguagesWrapper>
             </LanguagesContainer>
         </AboutContainer>
