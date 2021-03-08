@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContactFormContainer = styled.div`
     display: flex;
     justify-content: center;
-    padding: 5%;
+    padding: 10%;
 
     @media screen and (max-width: 768px) {
         display: flex;
