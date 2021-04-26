@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ReactComponent as GithubImg } from '../Logos/Github.svg';
+import { ReactComponent as WWWImg } from '../Logos/www.svg';
 
 export const ProjectsContainer = styled.div`
     display: flex;
@@ -84,6 +85,21 @@ export const IconLink = styled.a`
 export const Github = styled(GithubImg)`
     height: 30px;
     width: 30px;
+    
+    path {
+        fill: #3c3c3b !important;
+    }
+
+    &:hover path {
+        fill: #d4c8be !important;
+        transition: all ease 0.3s;
+    }
+`;
+
+export const WWW = styled(WWWImg)`
+    height: 30px;
+    width: 30px;
+    padding: 3px;
     
     path {
         fill: #3c3c3b !important;

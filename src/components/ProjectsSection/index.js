@@ -11,11 +11,13 @@ import {
     ProjectCardBody,
     IconLink,
     Github,
+    WWW
 } from './ProjectsElements';
 import Pokemon from '../Gifs/Pokemon.gif';
 import Props from '../Gifs/Props.gif';
 import Critterpedia from '../Gifs/Critterpedia.gif';
 import Portfolio from '../Gifs/Portfolio.gif';
+import CompleteHealthAndHealing from '../Gifs/CompleteHealthAndHealing.gif';
 
 const Projects = () => {
     return (
@@ -30,6 +32,14 @@ const Projects = () => {
                         <ProjectCardHeader>POKEMON TEAM BUILDER</ProjectCardHeader>
                         <ProjectCardBody>Pokémon Team Builder is an app designed for Pokémon trainers to help them build their perfect team. Users are able to pick up to six Pokémon and see their typing.</ProjectCardBody>
                         <IconLink href="https://github.com/kelseymosh/pokemon-team-builder"><Github/></IconLink>
+                    </ProjectCardTextWrapper>
+                </ProjectCardWrapper>
+                <ProjectCardWrapper>
+                    <ProjectCardVisual src={CompleteHealthAndHealing} alt="Complete Health and Healing gif"/>
+                    <ProjectCardTextWrapper>
+                        <ProjectCardHeader>COMPLETE HEALTH AND HEALING</ProjectCardHeader>
+                        <ProjectCardBody>This is a small business website commission for a holistic health clinic that I worked on with another developer. We used Prismic for content management.</ProjectCardBody>
+                        <IconLink href="https://completehealthandhealing.com/"><WWW/></IconLink>
                     </ProjectCardTextWrapper>
                 </ProjectCardWrapper>
                 <ProjectCardWrapper>
