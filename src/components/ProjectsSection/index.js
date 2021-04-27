@@ -27,11 +27,11 @@ const Projects = () => {
             </ProjectsHeaderWrapper>
             <ProjectCardsContainer>
                 <ProjectCardWrapper>
-                    <ProjectCardVisual src={Pokemon} alt="Pokemon App gif"/>
+                    <ProjectCardVisual src={Props} alt="Props App gif"/>
                     <ProjectCardTextWrapper>
-                        <ProjectCardHeader>POKEMON TEAM BUILDER</ProjectCardHeader>
-                        <ProjectCardBody>Pokémon Team Builder is an app designed for Pokémon trainers to help them build their perfect team. Users are able to pick up to six Pokémon and see their typing.</ProjectCardBody>
-                        <IconLink href="https://github.com/kelseymosh/pokemon-team-builder"><Github/></IconLink>
+                        <ProjectCardHeader>PROPS</ProjectCardHeader>
+                        <ProjectCardBody>Want to increase your houseplant collection while saving money? Props is a web app for plant lovers to advertise and trade their propagated houseplants.</ProjectCardBody>
+                        <IconLink href="https://github.com/kelseymosh/props-fe"><Github/></IconLink>
                     </ProjectCardTextWrapper>
                 </ProjectCardWrapper>
                 <ProjectCardWrapper>
@@ -43,19 +43,19 @@ const Projects = () => {
                     </ProjectCardTextWrapper>
                 </ProjectCardWrapper>
                 <ProjectCardWrapper>
-                    <ProjectCardVisual src={Props} alt="Props App gif"/>
-                    <ProjectCardTextWrapper>
-                        <ProjectCardHeader>PROPS</ProjectCardHeader>
-                        <ProjectCardBody>Want to increase your houseplant collection while saving money? Props is a web app for plant lovers to advertise and trade their propagated houseplants.</ProjectCardBody>
-                        <IconLink href="https://github.com/kelseymosh/props-fe"><Github/></IconLink>
-                    </ProjectCardTextWrapper>
-                </ProjectCardWrapper>
-                <ProjectCardWrapper>
                     <ProjectCardVisual src={Portfolio} alt="Portfolio Website gif"/>
                     <ProjectCardTextWrapper>
                         <ProjectCardHeader>PORTFOLIO</ProjectCardHeader>
                         <ProjectCardBody>This is the current version of the portfolio site you are on. Featuring an about section, resume download, project page, and email contact form.</ProjectCardBody>
                         <IconLink href="https://github.com/kelseymosh/portfolio-site"><Github/></IconLink>
+                    </ProjectCardTextWrapper>
+                </ProjectCardWrapper>
+                <ProjectCardWrapper>
+                    <ProjectCardVisual src={Pokemon} alt="Pokemon App gif"/>
+                    <ProjectCardTextWrapper>
+                        <ProjectCardHeader>POKEMON TEAM BUILDER</ProjectCardHeader>
+                        <ProjectCardBody>Pokémon Team Builder is an app designed for Pokémon trainers to help them build their perfect team. Users are able to pick up to six Pokémon and see their typing.</ProjectCardBody>
+                        <IconLink href="https://github.com/kelseymosh/pokemon-team-builder"><Github/></IconLink>
                     </ProjectCardTextWrapper>
                 </ProjectCardWrapper>
                 <ProjectCardWrapper>
