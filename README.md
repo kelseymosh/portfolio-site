@@ -1,7 +1,7 @@
 # Portfolio Site
 
 ## Description
-<a href="https://kelseyoshiro.com/">My Portfolio Site</a>
+<a href="https://kelseyoshiro.com/">Portfolio Site</a>
 This is my personal portfolio site showcasing my work and accomplishments! This site features a logo and animated hamburger menu made by yours truly.  Want to get in touch with me? Use my contact form that I created using EmailJS.
 
 ### Visuals
